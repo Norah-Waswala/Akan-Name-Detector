@@ -3,7 +3,8 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: x-large;
     font-weight: 300;
-    
+    margin: 3cm;
+    padding: 0cm;
 
 }
 h1 {
@@ -16,4 +17,8 @@ h1 {
 .main {
     text-align: center;
     font-size: larger;
+}
+.explainer {
+    text-align: center;
+
 }

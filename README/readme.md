@@ -1,4 +1,4 @@
-# Akan Name Detector
+# Akan Name Generator
 ## Name
 NORAH WASWALA
 ## Table of content
@@ -6,10 +6,14 @@ NORAH WASWALA
           * Project name
           * Image
       2. Body
+          * Intoduction
           * input birthday section
           * input gender section
+          * contact information
 ## Description
-This is a project that allow a user to input their birthday and get a return of their Akan name based on the day of the week they were born and gander .Current version dated at (26/03/2022)
+This is a project that allow a user to input their birthday and get a return of their Akan name based on the day of the week they were born and gender .Current version dated at (05/03/2022)
+## BDD
+
 ## Technologies Used
       * HTML
       * CSS
