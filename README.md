@@ -38,6 +38,6 @@ For more information, find me at my email (https://norah.waswala15@gmail.com)
 https://norah-waswala.github.io/Akan-Name-Detector/
 
 ## License and copyright information
-[MIT LICENSE](LICENSE
+[MIT LICENSE](LICENSE)
 
 Copyright (C) [2022] [@ Norah-Waswala]
