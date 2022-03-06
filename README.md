@@ -1,4 +1,5 @@
 Akan Name Generator
+
 Name
 NORAH WASWALA
 
@@ -39,4 +40,4 @@ https://norah-waswala.github.io/Akan-Name-Detector/
 License and copyright information
 MIT LICENSE
 
-Copyright (C) [2022] [@ Norah Waswala]
+Copyright (C) [2022] [@ Norah-Waswala]
