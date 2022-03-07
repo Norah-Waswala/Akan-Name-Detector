@@ -24,4 +24,12 @@ function getAkanName () {
   let genderValue = getGender();
 
   console.log(genderValue);
-  
+
+ // validation functions
+    function monthValidator () {
+      if (MOB < 1 || MOB > 12) {
+        return false;
+      } else {
+        return true;
+      }
+    }
