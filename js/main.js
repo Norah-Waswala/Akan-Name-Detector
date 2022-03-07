@@ -12,4 +12,16 @@ function getAkanName () {
   let fNames = [
     "Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"
   ];
+   // function to get gender
+   function getGender () {
+    for (let gender of genders){
+      if (gender.checked){
+        return gender.value;
+      }
+    }
+  }
+
+  let genderValue = getGender();
+
+  console.log(genderValue);
   
