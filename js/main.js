@@ -33,3 +33,31 @@ function getAkanName () {
         return true;
       }
     }
+    function dayValidator () {
+      if (MOB === 2 && Number(YOB)%4 === 0) {
+        if (DOB > 28 || DOB < 1) {
+          return false;
+        } else if (MOB === 2 && DOB > 29) {
+          return false;
+        } else if (MOB === 2 && DOB < 1) {
+          return false;
+        } else {
+          return true;
+        }
+      } else if (DOB < 1 || DOB > 31){
+        return false;
+      } else {
+        return true;
+      }
+    }
+      //validation variables
+      let Validmonth = monthValidator();
+      let Validday = dayValidator();
+    
+      //formula to determine day of birth (Sunday = 1, Monday = 2)etc..
+      let WeekdayNumber = Math.floor((((Number(YOB.slice(0,2))/4)-2*Number(YOB.slice(0,2))-1)+
+              ((5*Number(YOB.slice(2,4))/4))+((26*(MOB+1)/10))+DOB)%7);
+    
+      
+    
+  
