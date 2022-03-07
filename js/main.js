@@ -59,5 +59,103 @@ function getAkanName () {
               ((5*Number(YOB.slice(2,4))/4))+((26*(MOB+1)/10))+DOB)%7);
     
       
-    
+   //condition statement that validates input
+   if (genderValue == "male" && Validmonth && Validday){
+    switch (WeekdayNumber) {
+      case 1:
+        document.getElementById('result').textContent = "You were born on a Sunday: your Akan name is " + mNames[0];
+        document.getElementById('display-name').textContent = "Here is your Akan name: ";
+        return false;
+        break;
+      case 2:
+        document.getElementById('result').textContent = "You were born on a Monday: your Akan name is " + mNames[1];
+        document.getElementById('display-name').textContent = "Here is your Akan name: ";
+        return false;
+        break;
+      case 3:
+        document.getElementById('result').textContent = "You were born on a Tuesday: your Akan name is " + mNames[2];
+        document.getElementById('display-name').textContent = "Here is your Akan name: ";
+        return false;
+        break;
+      case 4:
+        document.getElementById('result').textContent = "You were born on a Wednesday: your Akan name is " + mNames[3];
+        document.getElementById('display-name').textContent = "Here is your Akan name: ";
+        return false;
+        break;
+      case 5:
+        document.getElementById('result').textContent = "You were born on a Thursday: your Akan name is " + mNames[4];
+        document.getElementById('display-name').textContent = "Here is your Akan name: ";
+        return false;
+        break;
+      case 6:
+        document.getElementById('result').textContent = "You were born on a Friday: your Akan name is " + mNames[5];
+        document.getElementById('display-name').textContent = "Here is your Akan name: ";
+        return false;
+        break;
+      case 7:
+        document.getElementById('result').textContent = "You were born on a Saturday: your Akan name is " + mNames[6];
+        document.getElementById('display-name').textContent = "Here is your Akan name: ";
+        return false;
+        break;
+      case 0:
+        document.getElementById('result').textContent = "You were born on a Sunday: your Akan name is " + mNames[0];
+        document.getElementById('display-name').textContent = "Here is your Akan name: ";
+        return false;
+        break;
+      default:
+        alert("mmh no Akan name for you");
+
+    }
+  } else if(genderValue == "female" && Validmonth && Validday) {
+    switch (WeekdayNumber) {
+      case 1:
+        document.getElementById('result').textContent = "You were born on a Sunday: your Akan name is " + fNames[0];
+        document.getElementById('display-name').textContent = "Here is your Akan name: ";
+        return false;
+        break;
+      case 2:
+        document.getElementById('result').textContent = "You were born on a Monday: your Akan name is " + fNames[1];
+        document.getElementById('display-name').textContent = "Here is your Akan name: ";
+        return false;
+        alert("Kwadwo");
+        break;
+      case 3:
+        document.getElementById('result').textContent = "You were born on a Tuesday: your Akan name is " + fNames[2];
+        document.getElementById('display-name').textContent = "Here is your Akan name: ";
+        return false;
+        break;
+      case 4:
+        document.getElementById('result').textContent = "You were born on a Wednesday: your Akan name is " + fNames[3];
+        document.getElementById('display-name').textContent = "Here is your Akan name: ";
+        return false;
+        break;
+      case 5:
+        document.getElementById('result').textContent = "You were born on a Thursday: your Akan name is " + fNames[4];
+        document.getElementById('display-name').textContent = "Here is your Akan name: ";
+        return false;
+        break;
+      case 6:
+        document.getElementById('result').textContent = "You were born on a Friday: your Akan name is " + fNames[5];
+        document.getElementById('display-name').textContent = "Here is your Akan name: ";
+        return false;
+        break;
+      case 7:
+        document.getElementById('result').textContent = "You were born on a Saturday: your Akan name is " + fNames[6];
+        document.getElementById('display-name').textContent = "Here is your Akan name: ";
+        return false;
+        break;
+      case 0:
+        document.getElementById('result').textContent = "You were born on a Sunday: your Akan name is " + fNames[0];
+        document.getElementById('display-name').textContent = "Here is your Akan name: ";
+        return false;
+        break;
+      default:
+        alert("mmh no Akan name for you");
+      }
+    } else{
+      alert("You entered invalid month or day");
+    }
+  }
+
+
   
