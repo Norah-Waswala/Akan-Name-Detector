@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akan name detector</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="text/javascript" href="/js/main.js">
+    
 
 <!-- Google fonts -->
 
@@ -16,56 +16,73 @@
 
  <!-- Font awesome icon link -->
 
- <script src="https://kit.fontawesome.com/e7ac757956.js" crossorigin="anonymous"></script>
-
+        
 </head>
 <body>
     <header>
+
+        <!-- here is the logo and head -->
+
        <h1>Akan Name Generator</h1>
             <div class="image">
                <img src="images/images.png" alt="">
             </div>
     </header>
     <hr>
-    <div class="explainer">
+
+    <!-- details about the project  -->
+
+<div class="explainer" name="Form" class="myForm"  onsubmit="getAkanName();">
     <p>This is  a web application built to take your birthday and calculate the day of the week that you were born and then depending
           on your gender outputs your Akan Name. Akan names originate from Ghana where children are named after days of the week they
            are born.</p>
-          </div>
+          
 
          <hr>
         
     <div class="main">
 
+        <!-- form to input birthday details -->
+
       <h3>Input Birthday</h3>
 
 
       <label for="Year">Year of birth:</label>
-      <input type="number" id="year" name="year_of_birth" placeholder="Eg: 1999">
+      <input type="integer" id="year" name="year" placeholder="Eg: 1999">
       <label for="Month">Month of birth:</label>
-      <input type="number" id="month" name="month_of_birth" placeholder="Eg. October">
+      <input type="integer" id="month" name="month" placeholder="Eg. 03">
       <label for="Date">Date of birth:</label>
-      <input type="number" id="date" name="date_of_birth" placeholder="Eg: 11th">
+      <input type="integer" id="date" name="date" placeholder="Eg: 11">
+
+      <!-- form to select male/female gender  -->
+      <!-- there is no neutral gender : it can only be male or female : further 
+        this means, we focus on the sex at birth   
+        -->
 
       <h3>Input Gender</h3>
 
-
-           <input type="radio" name="gender" id="male" placeholder="male">
+           <input type="radio" name="gender" id="male" value="male">
            <label for="male">Male</label>
 
-           <input type="radio" name="gender" id="female" placeholder="female">
+           <input type="radio" name="gender" id="female" value="female">
            <label for="female">Female</label>
            <br>
 
-           <input type="submit" value="Submit">
-    </div>
+           <button type="button" onclick="getName() ">Click Me</button>
+              <p id="result"></p>
+</div>
+        
+
+<!-- javascript function -->
+
+        <script src="js/main.js"></script>
+
+ <!-- Footter for my links -->
 
            <footer>
-            <i class="fa-brands fa-linkedin" style="font-size: 40px;color:darkblue;"></i>
-            <i class="material-icons">Linkedin</i>
-           <p> <a href="https://www.Linkedin.com/in/norah-waswala-84146b145" target="_blank" > <em>www.Linkedin.com/in/norah-waswala-84146b145</em> </a></p>
+           <a href="https://www.Linkedin.com/in/norah-waswala-84146b145" target="_blank" > <em>Linkedin</em> </a>
+           <a href="http://www.github.com/norah-waswala">Norah Waswala</a>
           </footer>
-      
-          <script src="main.js"></script>
-</body>
+
+    </body>
 </html>
