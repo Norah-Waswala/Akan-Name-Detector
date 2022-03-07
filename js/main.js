@@ -12,3 +12,4 @@ function getAkanName () {
   let fNames = [
     "Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"
   ];
+  
